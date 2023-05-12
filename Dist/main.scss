@@ -1,0 +1,158 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Overpass:wght@400;700&family=Readex+Pro:wght@160;400&family=Spline+Sans&display=swap");
+@import "config";
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-family: "Readex Pro", sans-serif;
+  font-family: "Spline Sans", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: $Very-Dark-Blue;
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+
+  button {
+    font-size: inherit;
+  }
+
+  .main-container,
+  .thank-you {
+    background-color: $Dark-Blue;
+    padding: 1.5rem;
+    border-radius: 0.625rem;
+    // responsive width
+    width: min(90%, 760px);
+    // height: 26rem;
+    p {
+      line-height: 1.8;
+    }
+
+    .btn-submit {
+      background-color: $Orange;
+      width: 100%;
+      padding: 0.8rem 0 0.6rem;
+      border: none;
+      border-radius: 24px;
+      color: $White;
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      cursor: pointer;
+      transition: 0.3s;
+
+      &:hover {
+        background-color: $White;
+        color: $Orange;
+      }
+    }
+  }
+
+  //   Main content container with the ratings
+  .main-container {
+    img {
+      background: hsl(214, 20%, 23%);
+      padding: 0.5rem;
+      border-radius: 50%;
+      margin: 3rem 0 1;
+    }
+
+    h1 {
+      color: $White;
+    }
+
+    p {
+      color: $Light-Grey;
+      margin-block-end: 2rem;
+    }
+
+    // List of 5 button ratings
+    ul {
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      justify-content: space-between;
+
+      //   individual buttons
+      .btn {
+        width: 3rem;
+        height: 3rem;
+        border-radius: 50%;
+        border: none;
+        background-color: hsl(214, 20%, 23%);
+        color: $White;
+        margin-block-end: 2rem;
+        cursor: pointer;
+        transition: 0.2s;
+        &:hover {
+          background-color: $Orange;
+        }
+
+        &:focus {
+          background-color: $Medium-Grey;
+        }
+      }
+    }
+    // Submit button
+  }
+
+  //   Thank you pop up dialogue
+  .thank-you {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    img {
+      display: block;
+      margin: 0 auto 2rem;
+    }
+    // 'You selected....' Paragraph
+    p:nth-child(2) {
+      background-color: hsl(214, 20%, 23%);
+      border-radius: 28px;
+      color: $Orange;
+      padding: 0.2rem 0.5rem 0;
+      font-size: 0.8rem;
+      margin-block-end: 2rem;
+    }
+
+    h2 {
+      color: $White;
+      margin-block-end: 1rem;
+    }
+    // 'we appreciate...' paragragh
+    p:nth-child(4) {
+      color: $Light-Grey;
+      margin-block-end: 2rem;
+    }
+  }
+
+  //   Hidden class for the thank you dialogue
+  .hidden {
+    display: none;
+  }
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: $White;
+  margin-block-start: 2rem;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}

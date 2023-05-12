@@ -1,0 +1,141 @@
+@import url("https://fonts.googleapis.com/css2?family=Epilogue:wght@100&family=Overpass:wght@400;700&family=Readex+Pro:wght@160;400&family=Spline+Sans&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+
+body {
+  font-family: "Epilogue", sans-serif;
+  font-family: "Readex Pro", sans-serif;
+  font-family: "Spline Sans", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-size: 15px;
+  background-color: hsl(216, 12%, 8%);
+  margin: 1.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+}
+body button {
+  font-size: inherit;
+}
+body .main-container,
+body .thank-you {
+  background-color: hsl(213, 19%, 18%);
+  padding: 1.5rem;
+  border-radius: 0.625rem;
+  width: min(90%, 760px);
+}
+body .main-container p,
+body .thank-you p {
+  line-height: 1.8;
+}
+body .main-container .btn-submit,
+body .thank-you .btn-submit {
+  background-color: hsl(25, 97%, 53%);
+  width: 100%;
+  padding: 0.8rem 0 0.6rem;
+  border: none;
+  border-radius: 24px;
+  color: hsl(0, 0%, 100%);
+  font-size: 1rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+body .main-container .btn-submit:hover,
+body .thank-you .btn-submit:hover {
+  background-color: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+}
+body .main-container img {
+  background: hsl(214, 20%, 23%);
+  padding: 0.5rem;
+  border-radius: 50%;
+  margin: 3rem 0 1;
+}
+body .main-container h1 {
+  color: hsl(0, 0%, 100%);
+}
+body .main-container p {
+  color: hsl(217, 12%, 63%);
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+body .main-container ul {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+body .main-container ul .btn {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  border: none;
+  background-color: hsl(214, 20%, 23%);
+  color: hsl(0, 0%, 100%);
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+body .main-container ul .btn:hover {
+  background-color: hsl(25, 97%, 53%);
+}
+body .main-container ul .btn:focus {
+  background-color: hsl(216, 12%, 54%);
+}
+body .thank-you {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+body .thank-you img {
+  display: block;
+  margin: 0 auto 2rem;
+}
+body .thank-you p:nth-child(2) {
+  background-color: hsl(214, 20%, 23%);
+  border-radius: 28px;
+  color: hsl(25, 97%, 53%);
+  padding: 0.2rem 0.5rem 0;
+  font-size: 0.8rem;
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+body .thank-you h2 {
+  color: hsl(0, 0%, 100%);
+  -webkit-margin-after: 1rem;
+          margin-block-end: 1rem;
+}
+body .thank-you p:nth-child(4) {
+  color: hsl(217, 12%, 63%);
+  -webkit-margin-after: 2rem;
+          margin-block-end: 2rem;
+}
+body .hidden {
+  display: none;
+}
+
+.attribution {
+  font-size: 14px;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  -webkit-margin-before: 2rem;
+          margin-block-start: 2rem;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}/*# sourceMappingURL=main.css.map */
